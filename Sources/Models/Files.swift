@@ -17,6 +17,7 @@ public struct File: Codable {
     public let shortDescription: String
     public let createdAt: Int
     public let lastModified: Int
+    public let folderId: String
 
     public init(id: String,
                 name: String,
@@ -25,7 +26,8 @@ public struct File: Codable {
                 isCollaborative: Bool,
                 shortDescription: String,
                 createdAt: Int,
-                lastModified: Int) {
+                lastModified: Int,
+                folderId: String) {
         self.id = id
         self.name = name
         self.content = content
@@ -34,6 +36,7 @@ public struct File: Codable {
         self.shortDescription = shortDescription
         self.createdAt = createdAt
         self.lastModified = lastModified
+        self.folderId = folderId
     }
 }
 
